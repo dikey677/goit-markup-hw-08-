@@ -1,0 +1,50 @@
+.address-content {
+  text-align: center;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 70px;
+  }
+
+  .address-content__city {
+    text-align: center;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  .address-content__list {
+    margin-top: 9px;
+  }
+
+  .address-content__link {
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__item:last-of-type {
+    margin-top: 9px;
+  }
+}

@@ -1,0 +1,36 @@
+.logo {
+  font-family: $font-raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $bg-color;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
+.logo__header {
+  font-family: $font-raleway;
+  font-style: $font-style;
+  font-weight: $font-700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.logo__footer {
+  font-style: $font-style;
+  font-weight: $font-700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}

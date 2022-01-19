@@ -1,0 +1,118 @@
+.form-content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+  .form-content__title {
+    text-align: center;
+    font-style: $font-style;
+    font-weight: $font-700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-color;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  .form-content__subscribe {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.form-content__mail {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  padding: 15px 16px;
+  outline: none;
+  transition-property: border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  &::placeholder {
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border: 1px solid $bg-color;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.form-content__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: $bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: #188ce8;
+  font-style: $font-style;
+  font-weight: $font-700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $text-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form-content__submit {
+    margin-top: 20px;
+  }
+}
+
+.footer-svg {
+  padding-left: 10px;
+}

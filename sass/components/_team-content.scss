@@ -1,0 +1,62 @@
+.team-content {
+  padding: 30px 0;
+
+  .team-content__title {
+    margin-bottom: 10px;
+    font-weight: $font-500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+  }
+
+  .team-content__profession {
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $icon-color;
+  }
+
+  .team-content__list {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .team-content__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    fill: #afb1b8;
+  }
+}
+
+.team-content__item {
+  margin-right: 10px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.team-content__link {
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $text-color;
+    background-color: $bg-color;
+  }
+}

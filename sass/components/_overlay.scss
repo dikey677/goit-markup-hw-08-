@@ -1,0 +1,47 @@
+.overlay {
+  .overlay__title {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $text-color;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 60px;
+    }
+  }
+
+  .overlay__button {
+    align-items: center;
+    padding: 10px 32px;
+    margin-top: 30px;
+    font-weight: $font-700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $text-color;
+    background-color: $bg-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: $bg-color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $text-color;
+      background-color: #188ce8;
+    }
+  }
+}
